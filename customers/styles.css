@@ -1,0 +1,54 @@
+body {
+  max-width: 100vw;
+  margin: 2rem 4rem;
+  font-size: 1rem;
+  font-family: 'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+
+h1, h3, .email {
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  border-bottom: 1px solid green;
+  margin-bottom: 1rem;
+  padding-bottom: .25rem;
+}
+
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile {
+  flex: 1 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+}
+
+img {
+  min-width: 100%;
+  height: auto;
+}
+
+.email {
+  margin-bottom: 1.5rem;
+}
+
+.address {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: .5rem;
+}

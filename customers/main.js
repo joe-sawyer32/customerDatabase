@@ -30,13 +30,16 @@
   function addCustomer(customer) {
     var profileWrapper = document.createElement("div");
     profileWrapper.classList.add("profile");
+    var profilePicWrapper = document.createElement("div");
     var profilePic = document.createElement("img");
     profilePic.src = customer.picture.large;
     var profileName = document.createElement("h3");
-    profileName.innerHTML = customer.name.first + customer.name.last;
+    profileName.innerHTML = customer.name.first + " " + customer.name.last;
     var profileEmail = document.createElement("span");
+    profileEmail.classList.add("email");
     profileEmail.innerHTML = customer.email;
     var profileAddress = document.createElement("span");
+    profileAddress.classList.add("address");
     profileAddress.innerHTML =
       customer.location.street +
       "<br>" +
@@ -46,6 +49,7 @@
       " " +
       customer.location.postcode;
     var profilePhoneNum = document.createElement("span");
+    profilePhoneNum.classList.add("phone");
     profilePhoneNum.innerHTML = customer.phone;
 
     profileWrapper.appendChild(profilePic);
